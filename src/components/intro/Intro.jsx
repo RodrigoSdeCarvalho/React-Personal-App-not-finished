@@ -26,8 +26,8 @@ export default function Intro() {
         </div>
       </div>
       <div className="arrow">
-        <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+        <a href="#aboutme">
+          <img src="assets/downWhite.png" alt="" />
         </a>
       </div>
     </div>

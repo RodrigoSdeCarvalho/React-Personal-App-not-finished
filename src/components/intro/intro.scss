@@ -1,7 +1,12 @@
 @import "../../global.scss";
 
 .intro {
-    background-color: white;
+    background-color: black;
+    background-image: url("https://wallpaperaccess.com/full/1101999.jpg");
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+
+
     display: flex;
     
     .center {
@@ -13,8 +18,16 @@
         padding: 10px;
         font-size: x-large;
 
+        h1 {
+          color: white;
+        }
+
+        h2 {
+          color: white;
+        }
+
         h3 {
-            color: crimson;
+            color: darkgreen;
         }
         @include mobile{
             font-size: small;

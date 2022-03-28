@@ -79,8 +79,8 @@
     }
 
     &.active {
-        background-color: $mainColor;
-        color: white;
+        background-color: white;
+        color: black;
 
         .left {
             display: flex;
@@ -108,29 +108,29 @@
                 font-size: 15px;
                 font-weight: 500;
                 cursor: pointer;
-                background:$mainColor;
+                background:white;
                 border-color: $mainColor;
                 border-style: none;
                 
             }   .text {
                     font-size: 15px;
                     font-weight: 550;
-                    color: $backGroundColor;
+                    color: black;
             }
         }
     }
 
         .hamburger {
-            span {
-                &:first-child{
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-                &:last-child{
-                    background-color: white;
-                    transform: rotate(-45deg);
-
-                }
+            .line1 {
+                background-color: black;
+                transform: rotate(45deg);
+            }
+            .line2 {
+                opacity: 0;
+            }
+            .line3 {
+                background-color: black;
+                transform: rotate(-45deg);
             }
         }
     }
