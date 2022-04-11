@@ -1,0 +1,41 @@
+.AboutMe {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        flex: 0.20;
+
+        h5 {
+            position: relative;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding: 0px;
+            font-size: xx-large;
+        }
+    }
+
+    .imgContainer {
+        flex: 0.33;
+        width: 20%;
+        top: 1%;
+        border-radius: 10%;
+        border: 3px solid black;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .aboutMeText {
+        flex: 0.33;
+        margin-top: 5%;
+        
+        p {
+            font-size: larger;
+        }
+    }
+}
