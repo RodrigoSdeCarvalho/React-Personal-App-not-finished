@@ -1,4 +1,5 @@
 import './topbar.scss'
+import Icon from '@material-ui/core/Icon';
 import {Person, Mail} from "@material-ui/icons"
 
 const phone_number = "+55 (47) 99696-0576"
@@ -11,7 +12,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className="left">
           <a href="#intro" className="logo">Rodrigo</a>
           <div className="itemContainer">
-            <Person className="icon"/>
+            <Person className='icon'></Person>
             <button onClick={() => {
               navigator.clipboard.writeText(phone_number);
               alert('Phone number copied to clipboard');
@@ -19,7 +20,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             </button>
           </div>
           <div className="itemContainer">
-            <Mail className="icon"/>
+            <Mail className='icon'></Mail>
             <button onClick={() => {
               navigator.clipboard.writeText(email);
               alert('E-mail copied to clipboard');
